@@ -161,6 +161,8 @@ export default class Typed {
         numChars--;
       }
 
+      this.options.onInputChar(this.arrayPos, this);
+
       // timeout for any pause after a character
       this.timeout = setTimeout(() => {
         // Accounts for blinking while paused

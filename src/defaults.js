@@ -84,6 +84,13 @@ const defaults = {
   contentType: 'html',
 
   /**
+   * After each character is typed
+   * @param {number} arrayPos
+   * @param {Typed} self
+   */
+  onInputChar: (arrayPos, self) => {},
+
+  /**
    * All typing is complete
    * @param {Typed} self
    */
